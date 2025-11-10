@@ -1,0 +1,12 @@
+2025-04-16 12:28:26,929 - __main__ - ERROR - ZeroDivision Error
+2025-04-16 12:28:26,930 - __main__ - DEBUG - This is debug message
+2025-04-16 12:28:49,310 - __main__ - ERROR - ZeroDivision Error
+Traceback (most recent call last):
+  File "c:\Ankan Debnath\Practice\Python\Logging\Custom Logger\Math.py", line 31, in <module>
+    div(10, 0)
+    ~~~^^^^^^^
+  File "c:\Ankan Debnath\Practice\Python\Logging\Custom Logger\Math.py", line 27, in div
+    return a / b
+           ~~^~~
+ZeroDivisionError: division by zero
+2025-04-16 12:28:49,317 - __main__ - DEBUG - This is debug message

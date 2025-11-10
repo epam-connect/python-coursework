@@ -1,0 +1,24 @@
+Three terms : Iterable, Iterator, Generator
+
+Iterable : Object that can be looped over. Must have the __iter__(self) method
+eg. lists are iterables but not iterators
+
+__iter__ : It must return an object that has __iter__ and __next implemented
+
+
+
+
+Iterators : Iterator is an object with a state that remembers where it is while iteration. 
+            It must have __iter__, __next__ methods implemented
+
+__iter__ : It must return itself
+__next__ : stores current stage of iteration and returns value. raises StopIteration exception when end is reached.
+
+note : Iterators are also iterables but reverse is not always true
+
+
+for loop behaviour:
+eg.         for obj in objlist:
+
+here forloop calls iter(objlist)-> gives iterator for that iter_object
+                   next(iter_object) calls repeatedly untill end
