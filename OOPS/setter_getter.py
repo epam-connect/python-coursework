@@ -17,6 +17,26 @@ class myclass:
     def x(self):
         return self._x + 10
 
-obj = myclass()
-obj.x = 10
-print(obj.x)
+# obj = myclass()
+# obj.x = 10
+# print(obj.x)
+
+class MyClass:
+    def set_x(self, x):
+        self._x = x
+    
+    def get_x(self):
+        return self._x
+
+    def del_x(self):
+        del self._x
+    
+    property(get_x, set_x, del_x)
+
+obj = MyClass()
+print(obj.__dict__)
+obj.set_x(10)
+print(obj.__dict__)
+print(obj.get_x())
+print(obj.__dict__)
+obj.del_x()

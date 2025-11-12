@@ -24,6 +24,12 @@ class Z(X, Y):  # Multiple inheritance: Z inherits from X and Y
         # print(instance)
         print(f"Returning instance from Z")
         return instance
+    
+'''
+super(currentClass, cls)
+currentClass: start looking after this class in MRO
+cls : which class's MRO to use
+'''    
 
 # Creating an instance of Z
 print(Z.mro())
